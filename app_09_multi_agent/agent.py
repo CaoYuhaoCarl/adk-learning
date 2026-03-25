@@ -1,16 +1,17 @@
-from typing import Dict, List
 import pathlib
 import re
 import wave
+import yfinance as yf
+
 from urllib.parse import urlparse
+from typing import Dict, List
+from pydantic import BaseModel, Field
 
 from google.adk.agents import Agent
 from google.adk.tools.agent_tool import AgentTool
 from google.adk.tools import google_search, ToolContext
 from google import genai
 from google.genai import types
-import yfinance as yf
-from pydantic import BaseModel, Field
 
 ### 6.1 Adding structure to the news report
 # Add two new features to our agent: NewStory an AINewsReport. This is a significant update from previous lessons- 
@@ -80,8 +81,8 @@ async def generate_podcast_audio(podcast_script: str, tool_context: ToolContext,
                 speech_config=types.SpeechConfig(
                     multi_speaker_voice_config=types.MultiSpeakerVoiceConfig(
                         speaker_voice_configs=[
-                            types.SpeakerVoiceConfig(speaker='Joe', 
-                                                     voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Puck'))),
+                            types.SpeakerVoiceConfig(speaker='Joe',
+                                                     voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Charon'))),
                             types.SpeakerVoiceConfig(speaker='Jane', 
                                                      voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Zephyr')))
                         ]

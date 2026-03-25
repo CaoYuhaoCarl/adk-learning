@@ -1,66 +1,65 @@
-# AI News Podcast Production Report
+# AI News Report for NASDAQ-Listed US Companies
 
-**Date:** June 05, 2024
-
-## Introduction
-Welcome to our special report on the latest advancements in Artificial Intelligence among NASDAQ-listed US companies. We'll be diving into significant developments, strategic investments, and the impact of AI across various sectors.
-
-## Company-Specific AI News
-
-### Microsoft (NASDAQ: MSFT)
-Microsoft continues its aggressive push into AI, highlighted by its significant investment in OpenAI. The company launched Copilot+ Windows PCs in late May 2024, branding them as the "fastest, most intelligent Windows PCs ever built." Microsoft has also committed $80 billion for US-based AI infrastructure and introduced an open-source framework for agentic AI applications. Azure AI remains a core focus.
-*   **Financial Context (MSFT):** $372.74 (-273.22%)
-
-### Alphabet (NASDAQ: GOOGL)
-Google's parent company, Alphabet, is seeing success with its AI chatbot Gemini, integrated into a range of products including Google Suite and Pixel phones. In April 2024, Alphabet unveiled a custom AI chip for its cloud services, based on Arm Holding's architecture, and introduced its new A3 Mega AI processor, leveraging NVIDIA's H100 Technology. Partnerships with NVIDIA extend to robotics, drug discovery, and manufacturing.
-*   **Financial Context (GOOGL):** $290.44 (-389.15%)
+## Key Company Developments
 
 ### NVIDIA (NASDAQ: NVDA)
-NVIDIA maintains its dominant position in AI hardware with its powerful GPUs like the A100, H100, and Blackwell chips, essential for AI and machine-learning model training. The company is collaborating with Dell Technologies on enterprise AI applications and played a crucial role in building Meta Platforms' Research SuperCluster. In March 2026, NVIDIA and Emerald AI announced a partnership with energy companies for flexible AI factories.
-*   **Financial Context (NVDA):** $175.20 (-27.32%)
+*   **News Headline:** NVIDIA continues to dominate the AI landscape, with its GPUs powering 95% of AI training infrastructure, contributing to a 400% year-over-year increase in its data center revenue due to the AI boom.
+*   **News Summary:** NVIDIA and Emerald AI are partnering with leading energy companies, including AES, Constellation, and NextEra Energy, to develop "flexible AI factories" as grid assets using the new NVIDIA Vera Rubin DSX AI Factory reference design. NVIDIA became the first company to reach a $5 trillion market valuation in 2025, driven by the AI surge.
+*   **Financial Context:** $175.20 (-27.32%)
 
-### Meta Platforms (NASDAQ: META)
-Meta is advancing its Llama language models, integrating them across its social media platforms. The company released Llama 4 Maverick and Llama 4 Scout models in April 2025, enhancing its AI assistant and enabling real-time image recognition with smart glasses. Meta is also developing Llama 4 Behemoth, aiming for its largest large language model yet.
-*   **Financial Context (META):** $592.92 (-189.62%)
+### Broadcom (NASDAQ: AVGO)
+*   **News Headline:** Broadcom reported robust performance in its AI semiconductor segment, generating $8.4 billion in revenue during Q1, with accelerator growth soaring by 140% year-over-year.
+*   **News Summary:** Broadcom projects its AI semiconductor revenue to exceed $100 billion by 2027. Its networking revenue also saw a 60% year-over-year increase. The company is actively collaborating with Arm to develop advanced XPU and networking solutions for hyperscalers to drive AI transformation.
+*   **Financial Context:** $318.29 (-130.85%)
+
+### Microsoft (NASDAQ: MSFT)
+*   **News Headline:** Microsoft, a major investor in OpenAI, has integrated AI into its core products, including Bing AI and Copilot.
+*   **News Summary:** In late May 2024, Microsoft unveiled its Copilot+ Windows PCs, touted as the "fastest, most intelligent Windows PCs ever built." Microsoft also provides AI models and tools, enabling users to customize Copilot or develop their own AI applications. In October 2025, Microsoft launched an open-source framework to assist developers in building agentic AI applications.
+*   **Financial Context:** $372.74 (-273.22%)
+
+### Alphabet (NASDAQ: GOOGL)
+*   **News Headline:** Alphabet has made significant strides with its AI chatbot, Gemini (formerly Bard), which is now integrated across various Google products.
+*   **News Summary:** Gemini is integrated into Google Suite, Chromecast, and the Google Pixel phone line.
+*   **Financial Context:** $290.44 (-389.15%)
 
 ### Arm Holdings plc (NASDAQ: ARM)
-Arm Holdings made a significant stride on March 24, 2026, by launching the Arm AGI CPU, designed for AI data centers and agentic AI workloads, marking its first foray into production silicon products for its compute platform.
-*   **Financial Context (ARM):** $134.96 (-140.99%)
+*   **News Headline:** Arm Holdings plc announced a historic expansion of its compute platform, venturing into production silicon products for the first time.
+*   **News Summary:** This initiative includes the launch of the Arm AGI CPU, specifically designed for AI data centers and emerging agentic AI workloads. Arm is collaborating with Microsoft, NVIDIA, Samsung, SK hynx, and TSMC on this endeavor.
+*   **Financial Context:** $134.96 (-140.99%)
 
-### Micron Technology (NASDAQ: MU)
-Micron Technology reported record revenue in Q2 fiscal 2026, largely fueled by robust AI-related demand for high-bandwidth memory (HBM) and data-center DRAM, crucial for GPU clusters.
-*   **Financial Context (MU):** $395.53 (-218.13%)
+### YY Group Holding Limited (NASDAQ: YYGH)
+*   **News Headline:** YY Group Holding Limited has appointed Kai Yang, co-founder of Arros AI, as its Chief AI Scientist.
+*   **News Summary:** This strategic hire aims to accelerate the development of YY Group's AI-powered workforce platform, YY Circle, building upon a prior partnership with Arros AI to integrate AI-driven candidate screening and interviewing capabilities.
+*   **Financial Context:** $1.08 (-1290.32%)
 
-### Teradyne (NASDAQ: TER)
-Teradyne is experiencing strong benefits from AI-related demand, which is accelerating investments in cloud AI infrastructure as customers increase production of various AI accelerators, networking, memory, and power devices.
-*   **Financial Context (TER):** $320.14 (+533.69%)
+### Baker Hughes (NASDAQ: BKR)
+*   **News Headline:** Baker Hughes is collaborating with Google Cloud to develop AI-enabled power optimization and sustainability solutions for data centers.
+*   **News Summary:** This partnership seeks to address the escalating power demands fueled by the expansion of AI data centers.
+*   **Financial Context:** $63.49 (+153.53%)
 
-### Intuitive Surgical, Inc. (NASDAQ: ISRG) & Microbot Medical Inc. (NASDAQ: MBOT)
-Intuitive Surgical leads in robotic surgery with its da Vinci systems, showcasing AI's transformative impact on healthcare. Microbot Medical also announced on March 24, 2026, the publication of a study on its LIBERTY System.
-*   **Financial Context (ISRG):** $471.91 (-128.23%)
-*   **Financial Context (MBOT):** $2.50 (-79.36%)
+### Core AI Holdings, Inc. (NASDAQ: CHAI)
+*   **News Headline:** Core AI Holdings, Inc. has formed a strategic joint venture with Toto DTS.
+*   **News Summary:** This partnership focuses on scaling AI infrastructure in high-growth markets by deploying efficient, high-density data center capacity to meet the surging AI-driven demand.
+*   **Financial Context:** $1.24 (-606.06%)
 
-### Rezolve AI (NASDAQ: RZLV)
-Rezolve AI and Microsoft are poised to highlight the emergence of "Agentic Commerce" at the 38th Annual Roth Conference on March 24, 2026.
-*   **Financial Context (RZLV):** $2.57 (-551.47%)
+### CoreWeave, Inc. (NASDAQ: CRWV)
+*   **News Headline:** CoreWeave, Inc. unveiled an expansion of its AI cloud platform at NVIDIA's GTC conference, integrating the NVIDIA HGX B300 into its cloud.
+*   **News Summary:** This expansion also includes new Weights & Biases capabilities to streamline reinforcement learning and agent development workflows.
+*   **Financial Context:** $83.02 (+129.33%)
 
-### Synopsys Inc. (NASDAQ: SNPS) & Aurora Mobile Limited (NASDAQ: JG)
-Synopsys Inc. offers AI products for silicon-based microchips and software, including Fusion Technology and DesignWare IP for AI. Aurora Mobile Limited announced on March 20, 2026, its AI-first customer engagement platform, EngageLab.
-*   **Financial Context (SNPS):** $415.62 (-389.84%)
-*   **Financial Context (JG):** $7.30 (+410.58%)
+### Rezolve.ai (NASDAQ: RZLV)
+*   **News Headline:** Rezolve.ai will be featured in a fireside chat at the 38th Annual Roth Conference.
+*   **News Summary:** Its CEO, Daniel M. Wagner, and Microsoft's Vic Miles will discuss the growing trend of Agentic Commerce.
+*   **Financial Context:** $2.57 (-551.47%)
 
-### Nextech3D.ai (N/A)
-Nextech3D.ai reported a strong start to 2026, securing 50 new customer contracts worth $230K, indicating accelerating adoption of its AI event technology platform.
-*   **Financial Context (N/A):** Not Available
+## Broader AI Market Trends
 
-## Emerging Trends and Applications
-
-*   **AI Infrastructure and Investment:** US private AI investment reached $109.1 billion in the last year. Hyperscalers like Amazon, Microsoft, and Google are investing over $320 billion in AI infrastructure in 2025.
-*   **Agentic AI and Commerce:** The concept of "Agentic Commerce" is gaining traction, with companies like Rezolve AI and Microsoft leading the charge.
-*   **AI in Enterprise Solutions:** AI is being increasingly integrated into enterprise solutions, from silicon-based microchips to customer engagement platforms.
-*   **AI in Robotics:** The NASDAQ Artificial Intelligence Indexes track companies engaged in AI across technology, industrial, medical sectors, robotics, and mobility.
-*   **AI in Event Technology:** Companies like Nextech3D.ai are seeing accelerated adoption of AI in event technology platforms.
+*   The global AI industry is projected to surpass $1.81 trillion by 2030.
+*   In 2025, private AI investment in the US reached $109.1 billion.
+*   AI is rapidly transforming diverse sectors, including technology, healthcare, automotive, financial services, and retail, by enhancing everything from drug discovery to autonomous vehicles.
+*   A notable trend is the shift from basic automation to "agentic AI," which empowers systems to reason, act, and orchestrate complex tasks across various business functions.
+*   Despite a recent "anything but AI" sentiment causing some fluctuations in AI-related stock valuations, the Morningstar Global Next Generation Artificial Intelligence Index demonstrated strong performance, returning 40.85% for the 12 months ending March 20, 2026.
 
 ## Data Sourcing Notes
-*   Performed a search for "latest AI news for NASDAQ-listed US companies" using the `news_search_agent` tool.
-*   Retrieved financial context for identified NASDAQ-listed tickers using the `get_financial_context` tool.
+
+*   No specific filtering actions were logged during the news search process.
