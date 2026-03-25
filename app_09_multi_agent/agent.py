@@ -17,6 +17,10 @@ from pydantic import BaseModel, Field
 # instead of using markdown, you are now using pydantic schemas to help create object classes that ensure consistency of the fields and data types used in your agent.  
 ###
 
+###------------------------------------###
+# Add pydantic schemas
+###------------------------------------###
+
 # Define the schema for the structured output
 class NewsStory(BaseModel):
     """A single news story with its context."""
@@ -35,7 +39,10 @@ class AINewsReport(BaseModel):
     report_summary: str = Field(description="A brief, high-level summary of the key findings in the report.")
     stories: List[NewsStory] = Field(description="A list of the individual news stories found.")
 
-### 6.2 Adding tools
+###------------------------------------###
+# Adding tools
+###------------------------------------###
+
 # The first tool you'll create is called `wav_file` that saves the output from Gemini TTS as a local wav file. Then you'll create a new function that generates the podcast audio by taking a text script as input, then uses Gemini text-to-speech module to convert it into audio. 
 ###
 
@@ -156,9 +163,9 @@ def save_news_to_markdown(filename: str, content: str) -> Dict[str, str]:
             "message": f"Failed to save file: {str(e)}"
         }
 
-### 6.3 Add callbacks
-# Now that you've added all the tools, the next step is to add in callbacks, just like you've done in previous videos. 
-###
+###------------------------------------###
+# Add callbacks
+###------------------------------------###
 
 # Whitelist of domains to use for google_search tool
 WHITELIST_DOMAINS = ["techcrunch.com", "venturebeat.com", "theverge.com", "technologyreview.com", "arstechnica.com"]
@@ -220,7 +227,10 @@ def inject_process_log_after_search(tool, args, tool_context, tool_response):
         }
     return tool_response
 
-### 6.4 Adding agents
+###------------------------------------###
+# Add agents
+###------------------------------------###
+
 # You have the tools and you have the callback, the last missing piece is to add the agents. 
 
 # This is your first multi-agent system containing two agents: 
