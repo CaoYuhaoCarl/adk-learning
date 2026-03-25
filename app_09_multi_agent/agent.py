@@ -76,7 +76,7 @@ async def generate_podcast_audio(podcast_script: str, tool_context: ToolContext,
                             types.SpeakerVoiceConfig(speaker='Joe', 
                                                      voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Puck'))),
                             types.SpeakerVoiceConfig(speaker='Jane', 
-                                                     voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Kore')))
+                                                     voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Zephyr')))
                         ]
                     )
                 )
@@ -95,7 +95,7 @@ async def generate_podcast_audio(podcast_script: str, tool_context: ToolContext,
 
         return {
             "status": "success",
-            "message": f"🎉Successfully generated and saved podcast audio to {file_path.resolve()}",
+            "message": f"Successfully generated and saved podcast audio to {file_path.resolve()}",
             "file_path": str(file_path.resolve()),
             "file_size": len(data)
         }
@@ -151,7 +151,10 @@ def save_news_to_markdown(filename: str, content: str) -> Dict[str, str]:
             "message": f"Successfully saved news to {file_path.resolve()}",
         }
     except Exception as e:
-        return {"status": "error", "message": f"Failed to save file: {str(e)}"}
+        return {
+            "status": "error", 
+            "message": f"Failed to save file: {str(e)}"
+        }
 
 ### 6.3 Add callbacks
 # Now that you've added all the tools, the next step is to add in callbacks, just like you've done in previous videos. 
@@ -312,11 +315,4 @@ root_agent = Agent(
         AgentTool(agent=podcaster_agent)
     ],
     # output_schema=AINewsReport, # 一旦 agent 满足了 schema 结构就立即输出并停止，后续的工具调用（save_news_to_markdown、podcaster_agent）完全被跳过了
-    before_tool_callback=[
-        filter_news_sources_callback,
-        enforce_data_freshness_callback,
-    ],
-    after_tool_callback=[
-        inject_process_log_after_search,
-    ]
 )
