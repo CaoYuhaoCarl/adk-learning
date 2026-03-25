@@ -71,7 +71,7 @@ async def generate_podcast_audio(podcast_script: str, tool_context: ToolContext,
     """
     try:
         client = genai.Client()
-        prompt = f"TTS the following conversation between Joe and Jane:\n\n{podcast_script}"
+        prompt = f"TTS the following conversation between Ray Dalio and Carlota Perez:\n\n{podcast_script}"
 
         response = client.models.generate_content(
             model="gemini-2.5-flash-preview-tts",
@@ -81,9 +81,9 @@ async def generate_podcast_audio(podcast_script: str, tool_context: ToolContext,
                 speech_config=types.SpeechConfig(
                     multi_speaker_voice_config=types.MultiSpeakerVoiceConfig(
                         speaker_voice_configs=[
-                            types.SpeakerVoiceConfig(speaker='Joe',
+                            types.SpeakerVoiceConfig(speaker='Ray Dalio',
                                                      voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Charon'))),
-                            types.SpeakerVoiceConfig(speaker='Jane', 
+                            types.SpeakerVoiceConfig(speaker='Carlota Perez', 
                                                      voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Zephyr')))
                         ]
                     )
@@ -248,7 +248,7 @@ def inject_process_log_after_search(tool, args, tool_context, tool_response):
 # 5.  **Structure the Report (Internal Step):** Use the `AINewsReport` schema to structure all gathered information. If financial data was not found for a story, you MUST use "Not Available" in the `financial_context` field. You MUST also populate the `process_log` field in the schema with the `process_log` list from the `google_search` tool's output.
 # 6.  **Format for Markdown (Internal Step):** Convert the structured `AINewsReport` data into a well-formatted Markdown string. This MUST include a section at the end called "## Data Sourcing Notes" where you list the items from the `process_log`.
 # 7.  **Save the Report (Background Step):** Save the Markdown string using `save_news_to_markdown` with the filename `ai_research_report.md`.
-# 8.  **Create Podcast Script (Internal Step):** After saving the report, you MUST convert the structured `AINewsReport` data into a natural, conversational podcast script between two hosts, 'Joe' (enthusiastic) and 'Jane' (analytical).
+# 8.  **Create Podcast Script (Internal Step):** After saving the report, you MUST convert the structured `AINewsReport` data into a natural, conversational podcast script between two hosts, 'Ray Dalio' (enthusiastic) and 'Carlota Perez' (analytical).
 # 9.  **Generate Audio (Background Step):** Call the `podcaster_agent` tool, passing the complete conversational script you just created to it.
 # 10. **Final Confirmation:** After the audio is successfully generated, your final response to the user MUST be: "All done. I've compiled the research report, saved it to `ai_research_report.md`, and generated the podcast audio file for you."
 ###
@@ -315,7 +315,7 @@ root_agent = Agent(
     5.  **Structure the Report (Internal Step):** Use the `AINewsReport` schema to structure all gathered information. If financial data was not found for a story, you MUST use "Not Available" in the `financial_context` field. You MUST also populate the `process_log` field in the schema with the `process_log` list from the `google_search` tool's output.
     6.  **Format for Markdown (Internal Step):** Convert the structured `AINewsReport` data into a well-formatted Markdown string. This MUST include a section at the end called "## Data Sourcing Notes" where you list the items from the `process_log`.
     7.  **Save the Report (Background Step):** Save the Markdown string using `save_news_to_markdown` with the filename `ai_research_report.md`.
-    8.  **Create Podcast Script (Internal Step):** After saving the report, you MUST convert the structured `AINewsReport` data into a natural, conversational podcast script between two hosts, 'Joe' (enthusiastic) and 'Jane' (analytical).
+    8.  **Create Podcast Script (Internal Step):** After saving the report, you MUST convert the structured `AINewsReport` data into a natural, conversational podcast script between two hosts, 'Ray Dalio' (enthusiastic) and 'Carlota Perez' (analytical).
     9.  **Generate Audio (Background Step):** Call the `podcaster_agent` tool, passing the complete conversational script you just created to it.
     10. **Final Confirmation:** After the audio is successfully generated, your final response to the user MUST be: "👏🏻👏🏻👏🏻 All done. I've compiled the research report, saved it to `ai_research_report.md`, and generated the podcast audio file for you."
     """,
