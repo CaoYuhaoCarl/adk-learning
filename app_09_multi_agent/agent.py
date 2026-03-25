@@ -12,7 +12,7 @@ from google.genai import types
 import yfinance as yf
 from pydantic import BaseModel, Field
 
-### 6.2 Adding structure to the news report
+### 6.1 Adding structure to the news report
 # Add two new features to our agent: NewStory an AINewsReport. This is a significant update from previous lessons- 
 # instead of using markdown, you are now using pydantic schemas to help create object classes that ensure consistency of the fields and data types used in your agent.  
 ###
@@ -35,7 +35,7 @@ class AINewsReport(BaseModel):
     report_summary: str = Field(description="A brief, high-level summary of the key findings in the report.")
     stories: List[NewsStory] = Field(description="A list of the individual news stories found.")
 
-### 6.3 Adding tools
+### 6.2 Adding tools
 # The first tool you'll create is called `wav_file` that saves the output from Gemini TTS as a local wav file. Then you'll create a new function that generates the podcast audio by taking a text script as input, then uses Gemini text-to-speech module to convert it into audio. 
 ###
 
@@ -74,9 +74,9 @@ async def generate_podcast_audio(podcast_script: str, tool_context: ToolContext,
                     multi_speaker_voice_config=types.MultiSpeakerVoiceConfig(
                         speaker_voice_configs=[
                             types.SpeakerVoiceConfig(speaker='Joe', 
-                                                     voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Kore'))),
+                                                     voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Puck'))),
                             types.SpeakerVoiceConfig(speaker='Jane', 
-                                                     voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Puck')))
+                                                     voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name='Kore')))
                         ]
                     )
                 )
@@ -95,7 +95,7 @@ async def generate_podcast_audio(podcast_script: str, tool_context: ToolContext,
 
         return {
             "status": "success",
-            "message": f"Successfully generated and saved podcast audio to {file_path.resolve()}",
+            "message": f"🎉Successfully generated and saved podcast audio to {file_path.resolve()}",
             "file_path": str(file_path.resolve()),
             "file_size": len(data)
         }
@@ -153,7 +153,7 @@ def save_news_to_markdown(filename: str, content: str) -> Dict[str, str]:
     except Exception as e:
         return {"status": "error", "message": f"Failed to save file: {str(e)}"}
 
-### 6.4 Add callbacks
+### 6.3 Add callbacks
 # Now that you've added all the tools, the next step is to add in callbacks, just like you've done in previous videos. 
 ###
 
@@ -217,7 +217,7 @@ def inject_process_log_after_search(tool, args, tool_context, tool_response):
         }
     return tool_response
 
-### 6.5 Adding agents
+### 6.4 Adding agents
 # You have the tools and you have the callback, the last missing piece is to add the agents. 
 
 # This is your first multi-agent system containing two agents: 
@@ -239,7 +239,7 @@ def inject_process_log_after_search(tool, args, tool_context, tool_response):
 # 10. **Final Confirmation:** After the audio is successfully generated, your final response to the user MUST be: "All done. I've compiled the research report, saved it to `ai_research_report.md`, and generated the podcast audio file for you."
 ###
 
-# 6.5.0 The Search Agent (isolated to avoid google_search + function calling conflict)
+# 6.4.0 The Search Agent (isolated to avoid google_search + function calling conflict)
 # Gemini API does not allow built-in tools (google_search) and function calling in the same request.
 # Solution: wrap google_search in its own agent with the relevant callbacks.
 search_agent = Agent(
@@ -259,7 +259,7 @@ search_agent = Agent(
     ],
 )
 
-# 6.5.1 The Podcaster Agent
+# 6.4.1 The Podcaster Agent
 podcaster_agent = Agent(
     name="podcaster_agent",
     model="gemini-2.5-flash",
@@ -275,7 +275,7 @@ podcaster_agent = Agent(
     tools=[generate_podcast_audio],
 )
 
-# 6.5.2 The Root Agent
+# 6.4.2 The Root Agent
 root_agent = Agent(
     name="ai_news_researcher",
     model="gemini-2.5-flash", 

@@ -66,7 +66,10 @@ def save_news_to_markdown(filename: str, content: str) -> Dict[str, str]:
             "message": f"Successfully saved news to {file_path.resolve()}",
         }
     except Exception as e:
-        return {"status": "error", "message": f"Failed to save file: {str(e)}"}
+        return {
+            "status": "error", 
+            "message": f"Failed to save file: {str(e)}"
+        }
 
 # 搜索新闻的 agent
 search_agent = Agent(
