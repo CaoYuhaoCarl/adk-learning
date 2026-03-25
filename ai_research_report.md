@@ -1,28 +1,69 @@
-# AI Industry News Report
+## AI News Report for NASDAQ-Listed US Companies
 
-## Top Headlines
+### Latest Developments in AI
 
-### 1. Adobe的股票图片库现在接受生成式AI技术创建的内容，并提供其自身的艺术生成器Adobe Firefly。该公司还在其Experience Cloud中整合了AI，用于市场营销和分析。
-*   **Company:** Adobe (ADBE)
-*   **Market Data:** $239.44，跌幅为 -330.55%。
-*   **Summary:** Adobe's stock image library now accepts generative AI content and offers its own AI art generator, Firefly, while also integrating AI into its Experience Cloud for marketing and analytics.
+Here's a summary of the latest AI news from NASDAQ-listed US companies, along with their recent financial context:
 
-### 2. Alphabet（GOOGL）最近发布了AI聊天机器人Bard，并提供了其他AI相关产品、服务和研究计划。在Google I/O 2023上，Alphabet展示了如何将生成式AI添加到Workspace和Android设备中。 2024年4月，谷歌推出了专为云服务客户设计的定制AI芯片，并透露了基于NVIDIA H100技术的新型A3 Mega AI处理器。在NVIDIA GTC 2025大会上，Alphabet与NVIDIA宣布了一系列专注于机器人、药物发现和制造业的AI合作。
-*   **Company:** Alphabet (GOOGL)
-*   **Market Data:** $295.76，跌幅为 -213.10%。
-*   **Summary:** Alphabet (Google) recently launched its AI chatbot Bard, unveiled customized AI chips for cloud customers in April 2024, and announced collaborations with NVIDIA in AI robotics, drug discovery, and manufacturing at GTC 2025.
+*   **Nasdaq (NDAQ)**
+    *   **News:** Nasdaq has embedded new AI capabilities within its market surveillance platform and announced an "Agentic AI Workforce" through its Nasdaq Verafin subsidiary to enhance anti-money laundering programs. These enhancements are expected to be offered to market surveillance platform customers starting in Q4 2025.
+    *   **Financial Context:** $84.28 (-245.37%)
 
-### 3. Meta Platforms (META) 在2021年更名为Facebook后，将其重心转向先进技术，包括AI。该公司开发了Llama语言模型，并将其整合到其社交媒体平台中。Meta于2025年4月发布了Llama 4 Maverick和Llama 4 Scout。 Meta最近签署了一项价值270亿美元的容量协议，以加倍投资人工智能基础设施，确保获取Nvidia即将推出的Vera Rubin平台。
-*   **Company:** Meta Platforms (META)
-*   **Market Data:** $594.34，跌幅为 -166.12%。
-*   **Summary:** Meta Platforms shifted focus to AI, developing the Llama language model, releasing Llama 4 Maverick and Scout in April 2025, and securing a $27 billion deal for AI infrastructure to access NVIDIA's Vera Rubin platform.
+*   **Microsoft (MSFT)**
+    *   **News:** Microsoft continues its substantial investment in AI infrastructure, including an announced US$80 billion for US-based AI infrastructure. The company has integrated its Copilot AI tools into Microsoft 365, launched an open-source framework for developers, and unveiled Copilot+ Windows PCs.
+    *   **Financial Context:** $372.74 (-273.22%)
 
-### 4. Microsoft (MSFT) 以其Windows操作系统和Office生产力套件而闻名，开发并授权消费和企业软件。该公司投资OpenAI，并成为AI领域的领导者。 微软于今年早些时候宣布在美国AI基础设施领域投资800亿美元，随后将其Copilot AI工具整合到Microsoft 365中。2025年10月，该公司推出了一个开源框架，允许开发人员构建智能AI应用程序。
-*   **Company:** Microsoft (MSFT)
-*   **Market Data:** $372.98，跌幅为 -266.95%。
-*   **Summary:** Microsoft, a leader in AI due to its OpenAI investment, announced an $80 billion investment in US AI infrastructure, integrated Copilot into Microsoft 365, and launched an open-source framework for AI app development in October 2025.
+*   **Alphabet (GOOGL)**
+    *   **News:** Alphabet has advanced its AI initiatives with the Gemini AI chatbot, integrated into products like Google Suite, Chromecast, and the Google Pixel phone line. The company also introduced a custom AI chip and formed strategic AI-focused partnerships with NVIDIA.
+    *   **Financial Context:** $290.44 (-389.15%)
 
-### 5. NVIDIA (NVDA) 领先的图形处理器开发商，也在扩展其数据中心网络解决方案，帮助将GPU连接起来处理复杂的工作负载。Nvidia凭借其在GPU、硬件、软件和网络工具领域的市场领导地位，在人工智能爆炸式增长的市场中拥有广泛的经济护城河。 NVIDIA是AI训练基础设施中95%以上GPU的设计者。H100/H200芯片支持ChatGPT、Gemini和企业AI。 在2025年，NVIDIA成为首家市值突破5万亿美元的公司。
-*   **Company:** NVIDIA (NVDA)
-*   **Market Data:** $174.38，跌幅为 -74.00%。
-*   **Summary:** NVIDIA, a dominant GPU developer, leads the AI market with over 95% of AI training infrastructure GPUs (H100/H200 chips), and expanded into data center networking, becoming the first company to reach $5 trillion market cap in 2025.
+*   **NVIDIA (NVDA)**
+    *   **News:** NVIDIA remains a dominant force in the AI chip market with its GPUs critical for training AI and machine-learning models. The company is actively partnering with numerous tech firms, and its Clara Healthcare platform provides tools for developing AI-powered medical applications.
+    *   **Financial Context:** $175.20 (-27.32%)
+
+*   **Broadcom (AVGO)**
+    *   **News:** Broadcom reported robust Q1 AI semiconductor revenue, with a 140% year-over-year growth in accelerator revenue due to hyperscaler demand. Broadcom management is targeting over $100 billion in AI semiconductor revenue by 2027.
+    *   **Financial Context:** $318.29 (-130.85%)
+
+*   **Core AI Holdings, Inc. (CHAI)**
+    *   **News:** Core AI Holdings, Inc. entered a strategic joint venture with Toto Digital & Technology Solutions, LLC to expand AI infrastructure capacity in high-growth markets.
+    *   **Financial Context:** $1.24 (-606.06%)
+
+*   **Applied Digital (APLD)**
+    *   **News:** Applied Digital has broken ground on "Delta Forge 1," an AI Factory campus in the southern U.S. designed to provide significant high-density AI capacity for hyperscale customers.
+    *   **Financial Context:** $26.79 (-172.41%)
+
+*   **CoreWeave, Inc. (CRWV)**
+    *   **News:** CoreWeave, Inc. announced an expansion of its AI cloud platform at NVIDIA's GTC conference, introducing NVIDIA HGX B300 and new Weights & Biases capabilities to enhance AI workloads and agent development workflows.
+    *   **Financial Context:** $83.02 (+129.33%)
+
+*   **Nebius (NBIS)**
+    *   **News:** Nebius and CrowdStrike announced a global partnership to integrate the CrowdStrike Falcon® platform into Nebius AI Cloud, providing unified cybersecurity for AI environments.
+    *   **Financial Context:** $114.91 (+66.58%)
+
+*   **YY Group (YYGH)**
+    *   **News:** YY Group appointed Kai Yang, co-founder of Arros AI, as its Chief AI Scientist to accelerate the development of its AI-powered workforce platform.
+    *   **Financial Context:** $1.08 (-1290.32%)
+
+*   **SoundHound AI (SOUN)**
+    *   **News:** SoundHound AI unveiled the world's first multimodal Agentic+ AI that operates entirely on the edge at NVIDIA GTC 2026.
+    *   **Financial Context:** $6.36 (-769.23%)
+
+*   **Rezolve Ai (RZLV)**
+    *   **News:** Rezolve Ai announced its participation with Microsoft at the 38th Annual Roth Conference to spotlight the rise of Agentic Commerce.
+    *   **Financial Context:** $2.57 (-551.47%)
+
+*   **Intel (INTC)**
+    *   **News:** Intel is increasingly focusing on AI, developing Gaudi accelerators and AI-optimized processors for edge computing. Its subsidiary, Mobileye, recently secured a significant DMS production program with a leading U.S. automaker.
+    *   **Financial Context:** $44.06 (+11.36%)
+
+*   **Advanced Micro Devices (AMD)**
+    *   **News:** Advanced Micro Devices continues to be a crucial provider in the AI chip sector, offering a range of GPUs known for their performance and energy efficiency in AI applications.
+    *   **Financial Context:** $205.37 (+132.72%)
+
+*   **Intuitive Surgical, Inc. (ISRG)**
+    *   **News:** Intuitive Surgical, Inc. is a leader in robotic surgery, with its da Vinci surgical systems representing significant advancements in minimally invasive procedures, demonstrating AI's impact on healthcare.
+    *   **Financial Context:** $471.91 (-128.23%)
+
+### Data Sourcing Notes
+*   News search performed using Google Search for 'latest AI news for NASDAQ-listed US companies'.
+*   Financial context retrieved for NASDAQ-listed companies.
