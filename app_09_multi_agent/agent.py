@@ -74,7 +74,7 @@ async def generate_podcast_audio(podcast_script: str, tool_context: ToolContext,
         prompt = f"TTS the following conversation between Ray Dalio and Carlota Perez:\n\n{podcast_script}"
 
         response = client.models.generate_content(
-            model="gemini-2.5-flash-preview-tts",
+            model="gemini-2.5-flash",
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_modalities=["AUDIO"],
@@ -258,7 +258,7 @@ def inject_process_log_after_search(tool, args, tool_context, tool_response):
 # Solution: wrap google_search in its own agent with the relevant callbacks.
 search_agent = Agent(
     name="news_search_agent",
-    model="gemini-2.5-flash",
+    model="gemini-2.0-flash-exp",
     instruction="""
     You are a News Search Specialist. Your only job is to search for AI news about NASDAQ-listed US companies.
     Use the google_search tool to find the latest relevant news and return the results.
@@ -276,7 +276,7 @@ search_agent = Agent(
 # 6.4.1 The Podcaster Agent
 podcaster_agent = Agent(
     name="podcaster_agent",
-    model="gemini-2.5-flash",
+    model="gemini-2.0-flash-exp",
     instruction="""
     You are an Audio Generation Specialist. Your single task is to take a provided text script
     and convert it into a multi-speaker audio file using the `generate_podcast_audio` tool.
@@ -292,7 +292,7 @@ podcaster_agent = Agent(
 # 6.4.2 The Root Agent
 root_agent = Agent(
     name="ai_news_researcher",
-    model="gemini-2.5-flash", 
+    model="gemini-2.0-flash-exp",
     instruction="""
     **Your Core Identity:**
     You are an AI News Podcast Producer. Your job is to orchestrate a complete workflow: find the latest AI news for US-listed companies on the NASDAQ, compile a report, write a script, and generate a podcast audio file, all while keeping the user informed.
